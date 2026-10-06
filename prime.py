@@ -1,6 +1,7 @@
-a =0
-b=1
-n = int(input("Enter the number till where you want the fibonacci series"))
-for i in range(n):
-    print(a,end=" ")
-    a,b=b,a+b
+n = int(input("Enter a number to check : "))
+for i in range(2,(n//2)+1):
+    if(n%i==0):
+        print("Not a Prime Number")
+        break;
+else:
+    print("Prime Number")
